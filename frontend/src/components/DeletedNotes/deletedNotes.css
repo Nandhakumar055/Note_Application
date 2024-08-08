@@ -1,0 +1,39 @@
+
+.deleted-main-section{
+    min-width: 100vh;
+    width: 100%;
+    min-width: 350px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.deleted-body-container{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    overflow-y: hidden;
+    position: relative;
+}
+@media screen and (min-width:768px) {
+    .deleted-body-container{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+.deleted-main-container{
+    width: 100%;
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (min-width:768px) {
+    .deleted-main-container{
+        width: 70%;
+        flex-grow: 1;
+    }
+}

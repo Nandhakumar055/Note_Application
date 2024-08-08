@@ -1,0 +1,86 @@
+
+.add-note-main-container{
+    min-width: 100vh;
+    width: 100%;
+    min-width: 300px;
+}
+
+.add-note-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+.add-note-section h1 {
+    font-size: 25px;
+    background: linear-gradient(to left, rgb(0, 219, 235), rgb(80, 0, 184));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    width: fit-content;
+    margin-bottom: 25px;
+}
+
+.add-note-card{
+    width: 100%;
+    max-width: 400px;
+    box-shadow: rgba(100, 100, 111, 0.61) 0px 7px 29px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.user-input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border: 2px solid rgb(0, 238, 255);
+    border-radius: 10px;
+    outline: none;
+    font-size: 13px;
+    font-weight: 400;
+}
+.label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: rgb(102, 0, 197);
+    font-weight: 500;
+}
+
+.user-note-text{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border: 2px solid rgb(0, 238, 255);
+    border-radius: 10px;
+    outline: none;
+    height: 250px;
+    font-family: "Roboto";
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.add-button{
+    background-image: linear-gradient(to left, rgb(0, 238, 255), rgb(80, 0, 184));
+    border:none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin:30px 0px;
+    color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.61) 0px 7px 29px 0px;
+    font-weight: 600;
+}

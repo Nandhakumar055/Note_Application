@@ -1,0 +1,41 @@
+
+.not-found-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.not-found-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.not-found-container img {
+    width: 100%;
+}
+
+.not-found-container h1 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    background: linear-gradient(to left, rgb(0, 219, 235), rgb(80, 0, 184));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    width: fit-content;
+    text-align: center;
+}
+
+.not-found-container p {
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+    line-height: 22px;
+}

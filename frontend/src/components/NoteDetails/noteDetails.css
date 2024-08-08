@@ -1,0 +1,140 @@
+
+.note-details-main-container{
+    min-width: 100vh;
+    width: 100%;
+    min-width: 300px;
+}
+
+.note-details-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+@media screen and (min-width:768px) {
+    .note-details-section{
+        padding: 50px 30px;
+    }
+}
+
+.note-details-card{
+    width: 100%;
+    max-width: 800px;
+    box-shadow: rgba(100, 100, 111, 0.61) 0px 7px 29px 0px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.title-and-date{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-and-date h1{
+    font-size: 25px;
+    background: linear-gradient(to left, rgb(0, 219, 235), rgb(80, 0, 184));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    width: fit-content;
+}
+@media screen and (max-width: 576px) {
+    .title-and-date h1 {
+        font-size: 20px;
+    }
+}
+
+.title-and-date h5{
+    font-size: 15px;
+    color: gray;
+    margin-top: 15px;
+}
+
+.note-details-text{
+    line-height: 35px;
+    color: rgb(94, 94, 94);
+}
+
+.edit-and-delete-note{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit-button , .delete-button {
+    background-image: linear-gradient(to left, rgb(0, 238, 255), rgb(80, 0, 184));
+    border:none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin:10px 0px;
+    color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.61) 0px 7px 29px 0px;
+    font-weight: 600;
+    cursor: pointer;
+}
+@media screen and (max-width:450px) {
+    .edit-button , .delete-button{
+        padding: 5px 15px;
+        box-shadow: rgba(100, 100, 111, 0.397) 0px 7px 29px 0px;
+    }
+}
+
+.edit-button p , .delete-button p {
+    padding-left: 10px;
+    margin: 5px 0px;
+}
+@media screen and (max-width:450px) {
+    .edit-button p, .delete-button p {
+        padding-left: 6px;
+        font-size: 14px;
+    }
+}
+
+
+.restore-button{
+    border:none;
+    border-radius: 5px;
+    padding: 7px 20px;
+    margin:10px 0px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-left:10px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(0, 195, 255), rgb(157, 255, 0));
+}
+
+.restore-button p {
+    padding-left: 10px;
+    margin: 5px 0px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.archived-button{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 4px 15px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.archived-button p {
+    font-weight: 500;
+    margin: 4px 0px;
+    color: white;
+    padding-left: 5px;
+}
+
+.active-archive-button{
+    background-image: linear-gradient(to right, rgb(159, 162, 163), rgb(183, 190, 190));
+}
+
+.in-active-archive-button{
+    background-image: linear-gradient(to right, rgb(208, 255, 0), rgb(0, 255, 242));
+}
