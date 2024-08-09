@@ -85,52 +85,65 @@ const AddNotes = () => {
                     }
                 };
 
+                // Update Illustration Image Url
+                const getIllustrationImageUrl = path === 'edit' ? 
+                "https://res.cloudinary.com/dhoeemazz/image/upload/v1723187094/6170328_3048232_imanqe.svg":
+                "https://res.cloudinary.com/dhoeemazz/image/upload/v1723187078/5421749_2810817_kkchuq.svg"
+
                 return (
-                    <div className='add-note-main-container'>
+                    <div className='add-note-main-section-container'>
                         <Header />
-                        <div className='add-note-section'>
-                            <h1>{path === 'edit' ? 'Edit Your Note' : 'Add Your Note'}</h1>
-                            <form className='add-note-card' onSubmit={(event) => onSubmitNote(event)}>
-                                <div className='input-container'>
-                                    <label className='label' htmlFor='Title'>Title</label>
-                                    <input
-                                        className='user-input'
-                                        type='text'
-                                        placeholder='Type your title'
-                                        name='title'
-                                        id='Title'
-                                        onChange={onChangeUserInput}
-                                        value={userNote.title}
-                                        required
+                        <div className='add-note-main-container'>
+                            <div className='add-note-section-card'>
+                                <form className='add-note-from-container' onSubmit={(event) => onSubmitNote(event)}>
+                                    <div className='input-container'>
+                                        <label className='label' htmlFor='Title'>Title</label>
+                                        <input
+                                            className='user-input'
+                                            type='text'
+                                            placeholder='Type your title'
+                                            name='title'
+                                            id='Title'
+                                            onChange={onChangeUserInput}
+                                            value={userNote.title}
+                                            required
+                                        />
+                                    </div>
+                                    <div className='input-container'>
+                                        <label className='label' htmlFor='NoteText'>Notes</label>
+                                        <textarea
+                                            className='user-note-text'
+                                            placeholder='Type your note'
+                                            id='NoteText'
+                                            name='notes'
+                                            onChange={onChangeUserInput}
+                                            value={userNote.notes}
+                                            required
+                                        />
+                                    </div>
+                                    <div className='input-container'>
+                                        <label className='label' htmlFor='Date'>Date</label>
+                                        <input
+                                            className='user-input'
+                                            type='date'
+                                            placeholder='Set your date'
+                                            id='Date'
+                                            name='date'
+                                            onChange={onChangeUserInput}
+                                            value={userNote.date}
+                                            required
+                                        />
+                                    </div>
+                                    <button type='submit' className='add-button'>{path === 'edit' ? 'Update Now' : 'Add Now'}</button>
+                                </form>
+                                <div className='form-detail-container'>
+                                    <h1>{path === 'edit' ? 'Edit Your Note' : 'Add Your Note'}</h1>
+                                    <img
+                                        src={getIllustrationImageUrl}
+                                        alt="No Notes"
                                     />
                                 </div>
-                                <div className='input-container'>
-                                    <label className='label' htmlFor='NoteText'>Notes</label>
-                                    <textarea
-                                        className='user-note-text'
-                                        placeholder='Type your note'
-                                        id='NoteText'
-                                        name='notes'
-                                        onChange={onChangeUserInput}
-                                        value={userNote.notes}
-                                        required
-                                    />
-                                </div>
-                                <div className='input-container'>
-                                    <label className='label' htmlFor='Date'>Date</label>
-                                    <input
-                                        className='user-input'
-                                        type='date'
-                                        placeholder='Set your date'
-                                        id='Date'
-                                        name='date'
-                                        onChange={onChangeUserInput}
-                                        value={userNote.date}
-                                        required
-                                    />
-                                </div>
-                                <button type='submit' className='add-button'>{path === 'edit' ? 'Update Now' : 'Add Now'}</button>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 );

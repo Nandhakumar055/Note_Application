@@ -1,39 +1,59 @@
 
-.add-note-main-container{
+.add-note-main-section-container{
     min-width: 100vh;
     width: 100%;
     min-width: 300px;
-}
-
-.add-note-section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    margin-bottom: 20px;
 }
 
-
-.add-note-section h1 {
-    font-size: 25px;
-    background: linear-gradient(to left, rgb(0, 219, 235), rgb(80, 0, 184));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    width: fit-content;
-    margin-bottom: 25px;
+.add-note-main-container{
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+@media screen and (min-width:768px) {
+    .add-note-main-container{
+        padding: 50px;
+    }
 }
 
-.add-note-card{
+.add-note-section-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: rgba(100, 100, 111, 0.61) 0px 7px 29px 0px;
+    border-radius: 10px;
+    padding: 5px 0px;
+    height: 100% ;
+}
+
+.add-note-from-container{
     width: 100%;
     max-width: 400px;
-    box-shadow: rgba(100, 100, 111, 0.61) 0px 7px 29px 0px;
-    padding: 20px;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    order: 2;
+    margin-top: 30px;
+    padding:0px 20px;
 }
+@media screen and (min-width:768px) {
+    .add-note-from-container{
+        width: 50%;
+        order: 1;
+        margin-top: 0px;
+        padding:20px 30px;
+    }
+}
+
 
 .input-container{
     display: flex;
@@ -46,7 +66,7 @@
     width: 100%;
     border: none;
     border: 2px solid rgb(0, 238, 255);
-    border-radius: 10px;
+    border-radius: 5px;
     outline: none;
     font-size: 13px;
     font-weight: 400;
@@ -83,4 +103,45 @@
     align-items: center;
     box-shadow: rgba(100, 100, 111, 0.61) 0px 7px 29px 0px;
     font-weight: 600;
+}
+
+.form-detail-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.61) 0px 7px 29px 0px;
+    border-radius: 20px;
+    flex-grow: 2;
+    background-image: linear-gradient(to left, rgb(0, 238, 255), rgb(80, 0, 184));
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius : 50px;
+    order: 1;
+    padding: 10px;
+}
+@media screen and (min-width:768px) {
+    .form-detail-container{
+        width: 50%;
+        order: 2;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius : 50px;
+        border-bottom-right-radius : 20px;
+    }
+}
+
+.form-detail-container h1 {
+    font-size: 25px;
+    background: linear-gradient(to left, rgb(136, 255, 0), rgb(255, 255, 255));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    width: fit-content;
+    margin: 10px 0px;
+    margin-top: 20px;
+}
+
+.form-detail-container img{
+    width: 90%;
+    max-width: 300px;
 }

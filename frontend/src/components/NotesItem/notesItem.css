@@ -10,13 +10,14 @@
     list-style: none;
     z-index: 1;
     padding-bottom: 4px;
+    border-radius: 10px;
 
 }
 
 .note-item{
     padding: 15px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: 1s ease-in-out;
     background-image: linear-gradient(to left, rgb(236, 236, 236), rgb(255, 255, 255));
     height: 270px; 
